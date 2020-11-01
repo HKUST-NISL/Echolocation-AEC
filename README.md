@@ -1,5 +1,3 @@
-[![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-
 # Echolocation-AEC
 This is the project folder for the journal articel "Active head rolls enhance sonar-based auditory localization performance"
 ## Table of contents
@@ -8,6 +6,7 @@ This is the project folder for the journal articel "Active head rolls enhance so
 * [Setup](#setup)
 * [Software](#software)
 * [Acknowledgements](#acknowledgements)
+* [License](#license)
 
 ## Introduction
 This project provide data and code related to the journal pulblication. The folder "Figure_data" provides the data for all the figures shown in the article. The provided codes form the Active Efficient Coding (AEC) model.
@@ -45,3 +44,5 @@ We would like to acknowledge the graduate students contributed to the Active Eff
 * Céline Teulière
 * Luca Lonini
 
+## License
+[![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
