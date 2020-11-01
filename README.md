@@ -25,8 +25,8 @@ Here, we will describe the main codes required for training and testing the prop
 To run this project, download the project folder and run:
 
 ```
-$ Main
-$ Generate_test_trials
+Main
+Generate_test_trials
 ```
 The program "Main.m" will save the learned model to the folder "Subject_{subject number}_trail_{trial number}_sigma_{roll angle standard deviation}". "Generate_test_trials.m" will generate the tresting trial trajectories and plot the trajectories. 
 
