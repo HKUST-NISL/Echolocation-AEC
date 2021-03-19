@@ -25,7 +25,7 @@ Here, we will describe the main codes required for training and testing the prop
 HRTF data
 
 We are grateful to the research group headed by Prof. Cynthia F. Moss at Department of Psychological & Brain Sciences, Johns Hopkins University, USA for the HRTF data access. We specially acknowledge Dr. Murat Aytekin for all the support with the data. 
-The HRTF data is organized by the subject number indicated by the name HRTF_data_subject#.mat. Each file contain the direction of sound source and also the left and right HRTFs. Each HRTF is in the frequency domain and the coefficients are in complex form for each frequency bin.
+The HRTF data is organized by the subject number indicated by the name HRTF_subject#.mat. Each file contain the direction of sound source and also the left and right HRTFs. Each HRTF is in the frequency domain and the coefficients are in complex form for each frequency bin.
 The raw data used to compute the HRTFs are not provided with this dataset. Please contact Prof. Cynthia F. Moss using the email cynthia.moss@gmail.com to request the raw data.
 
 ## Setup
