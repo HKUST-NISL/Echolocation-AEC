@@ -9,7 +9,7 @@ This is the project folder for the journal articel "Active head rolls enhance so
 * [License](#license)
 
 ## Introduction
-This project provide data and code related to the journal pulblication. The folder "Figure_data" provides the data for all the figures shown in the article. The provided codes form the Active Efficient Coding (AEC) model.
+This project provide data and code related to the journal pulblication. The provided codes form the Active Efficient Coding (AEC) model.
 	
 ## Description
 Here, we will describe the main codes required for training and testing the proposed model.
