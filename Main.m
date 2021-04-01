@@ -15,7 +15,7 @@ sigma_index=1;
 trial=1;
 
 %load HRTF data
-load('HRTF_Data/HRTF_2.mat');
+load('HRTF/HRTF_2.mat');
 HRTFl=HRTFl{1};
 HRTFr=HRTFr{1};
 select=~(logical(((azm<-90 | azm>90)|(elv<-90 | elv>90))));
