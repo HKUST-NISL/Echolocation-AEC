@@ -94,20 +94,22 @@ classdef ASSOMOnline < handle
             this.coef{1} = this.bases{1}'*X; 
             this.coef{2} = this.bases{2}'*X;
 
-            this.Proj  = this.coef{1}.^2 + this.coef{2}.^2; 
+            this.Proj  = this.coef{1}.^2 + this.coef{2}.^2; %P[n_subspace,batch_size]
+            Perr = ones(size(this.Proj))-this.Proj;
+            emissProb=exp(-this.Proj/(2*this.sigma_w^2)).*exp(-Perr/(2*this.sigma_n^2));      
 
+            nodeprobTmp =zeros(this.n_subspace,batch_size);
+            for i=1:batch_size
+                nodeprobTmp(:,i) = (this.transProb'*this.nodeProb).* emissProb(:,i);
+                this.nodeProb =  nodeprobTmp(:,i)./sum( nodeprobTmp(:,i));
+            end
+
+            [~,this.winners] = max(nodeprobTmp);
             [proj_max,local_winners] = max(this.Proj);
-
-            winner = (local_winners);
-            this.winners = (local_winners);
-            win_lin_index = sub2ind([this.n_subspace,batch_size ],winner, 1:batch_size );
-            win_proj = this.Proj(win_lin_index);
-            this.winCoef(win_lin_index) =(win_proj);
-
             mean_err = mean((sum(X.^2)-proj_max));
             this.winError=(mean_err);
             win_coef = (mean(this.Proj,2));
-            win_err =  this.winError;
+            win_err =  this.winError; 
             
         end
         function [win_coef] = get_response(this,X,sub)
